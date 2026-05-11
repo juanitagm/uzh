@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --dark:       #0c1a20;
+  --dark-teal:  #1a2f38;
+  --teal:       #2a4a56;
+  --coral:      #e8562a;
+  --coral-glow: #ff6b3d;
+  --cream:      #f5f0eb;
+  --white:      #ffffff;
+  --muted:      #5a7a8a;
+  --dim:        #1e3540;
+  --green:      #3dcc6e;
+  --yellow:     #e8b62a;
+  --red:        #cc4444;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-mono:  'Space Mono', 'Courier New', monospace;
+  --font-sans:  'DM Sans', system-ui, sans-serif;
+
+  /* Padding */
+  --pad-x: 56px;
+  --pad-y: 48px;
+}

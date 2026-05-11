@@ -1,0 +1,93 @@
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── App shell ── */
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: var(--dark);
+}
+
+.screen-fade {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes barGrow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+/* ── Utility classes ── */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+.pill {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--dim);
+  color: var(--muted);
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.coral-italic {
+  color: var(--coral);
+  font-style: italic;
+}
+
+/* ── Screen base ── */
+.screen {
+  width: 100%;
+  height: 100%;
+  padding: var(--pad-y) var(--pad-x);
+  position: relative;
+  overflow: hidden;
+}
+
+.screen--dark       { background: var(--dark); }
+.screen--dark-teal  { background: var(--dark-teal); }
+.screen--black      { background: #000000; }
